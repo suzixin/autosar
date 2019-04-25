@@ -41,3 +41,12 @@ Router将通用REST具体化为特定类型的RESTful API。
 ara::rest为服务器和客户端通信提供了所谓的（网络）端点。
 
 ## 诊断
+### 概要
+- realizes the ISO 14229-5 (UDSonIP) based on  
+    - the ISO 14229-1 (UDS) 
+    - the ISO 13400-2 (DoIP).
+- language independent
+- 从CP中的诊断服务DEXT发展而来，接口与CP保持一致，方便跨平台移植。
+- The supported Transport Layer is DoIP. 
+- the Adaptive Diagnostics Manager supports an own diagnostics Server instance for each installed SoftwareCluster having its own DiagnosticAddress. 
+
