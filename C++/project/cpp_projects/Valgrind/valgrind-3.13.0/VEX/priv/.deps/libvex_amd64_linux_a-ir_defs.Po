@@ -1,0 +1,18 @@
+priv/libvex_amd64_linux_a-ir_defs.o: priv/ir_defs.c \
+ /usr/include/stdc-predef.h ../VEX/pub/libvex_basictypes.h \
+ ../VEX/pub/libvex_ir.h ../VEX/pub/libvex_basictypes.h \
+ ../VEX/pub/libvex.h ../VEX/pub/libvex_ir.h priv/main_util.h
+
+/usr/include/stdc-predef.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+../VEX/pub/libvex_ir.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+../VEX/pub/libvex.h:
+
+../VEX/pub/libvex_ir.h:
+
+priv/main_util.h:

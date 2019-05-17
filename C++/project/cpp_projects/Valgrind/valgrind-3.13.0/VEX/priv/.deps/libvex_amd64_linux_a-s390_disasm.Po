@@ -1,0 +1,26 @@
+priv/libvex_amd64_linux_a-s390_disasm.o: priv/s390_disasm.c \
+ /usr/include/stdc-predef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
+ ../VEX/pub/libvex_basictypes.h priv/main_util.h priv/main_globals.h \
+ ../VEX/pub/libvex.h ../VEX/pub/libvex_basictypes.h \
+ ../VEX/pub/libvex_ir.h priv/s390_defs.h priv/s390_disasm.h
+
+/usr/include/stdc-predef.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+priv/main_util.h:
+
+priv/main_globals.h:
+
+../VEX/pub/libvex.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+../VEX/pub/libvex_ir.h:
+
+priv/s390_defs.h:
+
+priv/s390_disasm.h:

@@ -1,0 +1,4 @@
+m_coredump/libcoregrind_amd64_linux_a-coredump-solaris.o: \
+ m_coredump/coredump-solaris.c /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

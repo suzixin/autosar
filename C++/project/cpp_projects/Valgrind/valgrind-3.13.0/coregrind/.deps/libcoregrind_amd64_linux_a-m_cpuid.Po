@@ -1,0 +1,11 @@
+libcoregrind_amd64_linux_a-m_cpuid.o: m_cpuid.S \
+ /usr/include/stdc-predef.h pub_core_basics_asm.h \
+ ../include/pub_tool_basics_asm.h ../config.h
+
+/usr/include/stdc-predef.h:
+
+pub_core_basics_asm.h:
+
+../include/pub_tool_basics_asm.h:
+
+../config.h:

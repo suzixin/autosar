@@ -1,0 +1,4 @@
+m_sigframe/libcoregrind_amd64_linux_a-sigframe-ppc64-linux.o: \
+ m_sigframe/sigframe-ppc64-linux.c /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

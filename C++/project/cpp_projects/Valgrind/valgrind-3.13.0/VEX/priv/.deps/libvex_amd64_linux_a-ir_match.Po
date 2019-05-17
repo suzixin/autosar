@@ -1,0 +1,16 @@
+priv/libvex_amd64_linux_a-ir_match.o: priv/ir_match.c \
+ /usr/include/stdc-predef.h priv/main_util.h \
+ ../VEX/pub/libvex_basictypes.h priv/ir_match.h ../VEX/pub/libvex_ir.h \
+ ../VEX/pub/libvex_basictypes.h
+
+/usr/include/stdc-predef.h:
+
+priv/main_util.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+priv/ir_match.h:
+
+../VEX/pub/libvex_ir.h:
+
+../VEX/pub/libvex_basictypes.h:

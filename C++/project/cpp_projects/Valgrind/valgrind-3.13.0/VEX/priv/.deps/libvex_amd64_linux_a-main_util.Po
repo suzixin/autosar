@@ -1,0 +1,21 @@
+priv/libvex_amd64_linux_a-main_util.o: priv/main_util.c \
+ /usr/include/stdc-predef.h ../VEX/pub/libvex_basictypes.h \
+ ../VEX/pub/libvex.h ../VEX/pub/libvex_basictypes.h \
+ ../VEX/pub/libvex_ir.h priv/main_globals.h priv/main_util.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h
+
+/usr/include/stdc-predef.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+../VEX/pub/libvex.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+../VEX/pub/libvex_ir.h:
+
+priv/main_globals.h:
+
+priv/main_util.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h:

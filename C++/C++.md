@@ -77,10 +77,33 @@ Student(int sID) : id(sID)
 对象成员：按定义时的顺序构造，与上述初始化代码顺序无关
 析构函数被调用的顺序：相反
 
-第2课第5节_c++基础知识_静态成员_友员
-第2课第6.1节_c++基础知识_运算符重载_类外函数
-第2课第6.2节_c++基础知识_运算符重载_成员函数
-第3课第1节_c++面向对象编程_访问控制和继承
+## 第2课第5节_c++基础知识_静态成员_友员
+## 第2课第6.1节_c++基础知识_运算符重载_类外函数
+1. 如何在调用时区分前置和后置运算符
+c++ primer中通过显示调用区分
+而视频中的例程则似乎通过编译器的特性来区分。
+
+2. 值返回和引用返回的区别
+- 值返回
+构造一个临时对象来返回，会依次调用该类的构造和析构函数，效率较低。
+- 引用返回
+直接返回一个引用，无需重新构造，效率较高。
+
+3. `=`运算符的引用注意区分`拷贝构造` 和 `operator=`
+**原则**：不影响运算结果时，效率优先。后置++运算符只能返回值，前置++可以返回引用。
+
+## 第2课第6.2节_c++基础知识_运算符重载_成员函数
+## 第3课第1节_c++面向对象编程_访问控制和继承
+1. 子类继承父类的成员函数之后可以覆写。
+2. 在改写`person_student.cpp`文件时，发现`c`和`c++`中字符串参数的差异：
+>The problem is that you are trying to convert a string literal (with type const char[]) to char*.You can convert a const char[] to const char* because the array decays to the pointer, but what you are doing is making a mutable a constant.
+
+解决方法：
+```
+Person p((char *)"lisi", 16);
+```
+3. 子类可见到的成员，可以修改它的权限。
+`private: using Father::getMoney;`
 第3课第2节_c++面向对象编程_多重继承
 第3课第3节_c++面向对象编程_再论构造函数
 第4课第1节_c++面向对象编程_多态

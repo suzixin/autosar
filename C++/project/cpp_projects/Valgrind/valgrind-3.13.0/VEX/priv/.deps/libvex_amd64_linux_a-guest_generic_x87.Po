@@ -1,0 +1,11 @@
+priv/libvex_amd64_linux_a-guest_generic_x87.o: priv/guest_generic_x87.c \
+ /usr/include/stdc-predef.h ../VEX/pub/libvex_basictypes.h \
+ priv/main_util.h priv/guest_generic_x87.h
+
+/usr/include/stdc-predef.h:
+
+../VEX/pub/libvex_basictypes.h:
+
+priv/main_util.h:
+
+priv/guest_generic_x87.h:
