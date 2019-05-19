@@ -1,7 +1,11 @@
 #include <iostream>
 #include <string.h>
 #include <unistd.h>
-
+/* add_by_szx:  
+返回值例外：
+函数参数相同，但是返回值是当前对象的指针或引用时，
+也可以设为虚函数
+*/
 using namespace std;
 
 class Human {

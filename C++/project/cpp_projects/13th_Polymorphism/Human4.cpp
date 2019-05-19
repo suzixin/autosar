@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string.h>
 #include <unistd.h>
-
+/* add_by_szx: 析构函数一般是虚函数 */
 using namespace std;
 
 class Human {

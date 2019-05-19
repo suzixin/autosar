@@ -71,6 +71,7 @@ private:
 
 public:
 	LeftRightSofabed() { cout <<"LeftRightSofabed()"<<endl; }
+/* add_by_szx: 	初始化序列中写的顺序和实际上传入的顺序没有任何关系 */
 	LeftRightSofabed(char *str1, char *str2, char *str3) : Sofabed(str1), LeftRightCom(str2), date(str3) { cout <<"LeftRightSofabed()"<<endl; }
 	
 };

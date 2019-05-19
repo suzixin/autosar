@@ -28,6 +28,7 @@ public:
 	Sofa() { cout <<"Sofa()"<<endl; }
 };
 
+/* add_by_szx: 虚拟基类，构造函数只执行一次 */
 class Bed : virtual public Furniture, virtual public Vertification3C {
 private:
 	int b;

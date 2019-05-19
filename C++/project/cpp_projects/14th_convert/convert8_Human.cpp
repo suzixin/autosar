@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string.h>
 #include <unistd.h>
-
+/* add_by_szx:  
+静态类型转换
+*/
 using namespace std;
 
 class Human {
@@ -36,7 +38,16 @@ public:
 void test_eating(Human& h)
 {
 #if 1
-	//Englishman& pe = dynamic_cast<Englishman&>(h);
+	Englishman& pe = dynamic_cast<Englishman&>(h);
+/* add_by_szx: 
+如果这里的动态转换出问题了
+程序会在运行时崩溃，而不是编译错误。
+提示如下：
+terminate called after throwing an instance of 'std::bad_cast'
+  what():  std::bad_cast
+Aborted (core dumped)
+
+*/
 	Chinese&    pc = dynamic_cast<Chinese&>(h);
 	Guangximan& pg = dynamic_cast<Guangximan&>(h);
 #else
@@ -64,8 +75,9 @@ int main(int argc, char **argv)
 	pe = static_cast<Englishman *>(&h);
 
 	//Englishman *pe2 = static_cast<Englishman *>(&g);
-
+/* add_by_szx: static_cast编译器可以帮我们检查一些错误，如果转换失败会直接报编译错误 */
 	Chinese *pc = static_cast<Chinese *>(&g);
+	test_eating(g);
 
 	return 0;
 }

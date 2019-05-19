@@ -1,7 +1,11 @@
 #include <iostream>
 #include <string.h>
 #include <unistd.h>
-
+/* add_by_szx:  
+机制：
+dynamic_cast函数去含有 virtual 的类中对应的虚函数表里找类相关信息，来确定当前调用的类是哪一个类。
+从这里我们可看出类中对应的虚函数表里也有类相关的信息。
+*/
 using namespace std;
 
 class Human {

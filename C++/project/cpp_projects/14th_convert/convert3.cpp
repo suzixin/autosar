@@ -1,6 +1,6 @@
 
 #include <stdio.h>
-
+/* add_by_szx: c++中使用的显示类型转换reinterpret_cast */
 int main(int argc, char **argv)
 {
 	double d = 100.1;

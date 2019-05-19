@@ -1,7 +1,10 @@
 #include <iostream>
 #include <string.h>
 #include <unistd.h>
-
+/* add_by_szx:  
+能否动态转换成他的父类？可以
+说明虚函数表中的类信息包含自己的类的信息，也包含它的继承信息
+*/
 using namespace std;
 
 class Human {

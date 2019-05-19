@@ -2,6 +2,10 @@
 #include <string.h>
 #include <unistd.h>
 
+/* add_by_szx: 
+上行转换：派生类对象转换为基类对象
+下行转换：基类对象转换为派生类对象
+*/
 using namespace std;
 
 class Human {
@@ -37,6 +41,11 @@ void test_eating(Human& h)
 {
 #if 1
 	//Englishman& pe = dynamic_cast<Englishman&>(h);
+	/* add_by_szx: 
+	转换引用的时候会有什么问题：
+	广西人不能转换为英国人，如果使用引用的时候转换失败程序就会崩溃
+	*/
+
 	Chinese&    pc = dynamic_cast<Chinese&>(h);
 	Guangximan& pg = dynamic_cast<Guangximan&>(h);
 #else

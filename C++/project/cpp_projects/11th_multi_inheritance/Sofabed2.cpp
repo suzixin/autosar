@@ -33,6 +33,7 @@ int main(int argc, char **argv)
 	s.sleep();
 
 	//s.setWeight(100); /* error, 有二义性 */
+/* add_by_szx: 	可以用以下的方法来显式指示具体用的是哪个父类中的方法，但太麻烦 */
 	s.Sofa::setWeight(100);
 	
 	return 0;

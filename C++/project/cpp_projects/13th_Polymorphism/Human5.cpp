@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string.h>
 #include <unistd.h>
-
+/* add_by_szx: 返回值例外 
+规定在不同类的虚函数中函数名、参数、返回值都要一样，这样才能满足多态的要求。
+*/
 using namespace std;
 
 class Human {

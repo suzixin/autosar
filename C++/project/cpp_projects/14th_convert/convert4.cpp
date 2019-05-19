@@ -1,5 +1,6 @@
 
 #include <stdio.h>
+/* add_by_szx: const_cast可以把const去掉。 */
 
 int main(int argc, char **argv)
 {

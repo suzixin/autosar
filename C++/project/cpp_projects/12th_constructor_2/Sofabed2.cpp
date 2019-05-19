@@ -59,7 +59,7 @@ public:
 	Type() { cout <<"Type()"<<endl; }
 };
 
-
+/* add_by_szx: 在这里把 LeftRightCom 设置为虚拟基类后会先调用它的构造函数 */
 class LeftRightSofabed : public Sofabed, virtual public LeftRightCom {
 private:
 	Date date;

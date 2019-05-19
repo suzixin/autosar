@@ -1,7 +1,11 @@
 #include <iostream>
 #include <string.h>
 #include <unistd.h>
-
+/* add_by_szx:  
+test_func(Human* h):
+test_func(Human& h)：使用指针或引用来使用对象时，才有多态
+test_func(Human h)：传值时，无多态
+*/
 using namespace std;
 
 class Human {
