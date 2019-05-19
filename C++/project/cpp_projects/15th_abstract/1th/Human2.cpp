@@ -30,6 +30,7 @@ public:
 	void eating(void) { cout<<"use chopsticks to eat"<<endl; }
 	void wearing(void) {cout<<"wear chinese style"<<endl; }
 	//void driving(void) {cout<<"drive chinese car"<<endl; }
+/* add_by_szx: 	在这里没有实现 Human 中的纯虚函数 driving ，所以这里的 Chinese 还是一个抽象类 */
 	virtual ~Chinese() { cout<<"~Chinese()"<<endl; }
 	virtual Chinese* test(void) {cout<<"Chinese's test"<<endl; return this; }
 };

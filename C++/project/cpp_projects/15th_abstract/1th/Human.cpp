@@ -3,11 +3,14 @@
 #include <unistd.h>
 
 using namespace std;
-
+/* add_by_szx:  
+一个类里有纯虚函数，这个类就是抽象类，抽象类不能实例化对象。
+*/
 class Human {
 private:
 	int a;
 public:
+/* add_by_szx: 	纯虚函数 */
 	virtual void eating(void) = 0;
 	virtual void wearing(void) = 0;
 	virtual void driving(void) = 0;
