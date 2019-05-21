@@ -20,7 +20,7 @@ float& max(float& a, float& b)
 	return (a < b)? b : a;
 }
 */
-
+/* add_by_szx: 可读可写的变量可转换为const变量，但是反过来就不行 */
 template<typename T>
 const T& mymax(const T& a, const T& b)
 {

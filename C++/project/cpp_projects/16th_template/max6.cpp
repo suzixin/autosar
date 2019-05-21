@@ -1,7 +1,14 @@
 #include <iostream>
 #include <string.h>
 #include <unistd.h>
+/* add_by_szx:  
+template推导过程计算步骤;
+- 列出满足条件的候选函数
+- 比较这些候选的优先级，选中一个最优的函数来调用
 
+1--2 优先选择不需要类型转换的
+2--3 普通函数和模板函数，优先选择普通函数
+*/
 using namespace std;
 
 /*

@@ -1,4 +1,4 @@
-
+/* add_by_szx: 在这个例子里引入了纯虚函数 */
 #include "Human.h"
 #include "Englishman.h"
 #include "Chinese.h"

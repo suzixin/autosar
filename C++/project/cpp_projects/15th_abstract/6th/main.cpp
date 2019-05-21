@@ -1,4 +1,4 @@
-
+/* add_by_szx: 在这个例子里实现了类和应用编程分离，通过修改Makefile，将类编译成一个动态链接库 */
 #include "Human.h"
 #include "Englishman.h"
 #include "Chinese.h"

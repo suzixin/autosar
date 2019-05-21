@@ -62,6 +62,7 @@ int main(int argc, char **argv)
 	//mymax(a2, b2);  /* mymax(char[4], char[3]), 无法推导出T: mymax(char& [4], char& [3]), 因为两个参数类型不一样 */
 	mymax2(a2, b2);   /* mymax2(char[4], char[3]), 推导: mymax2(const char *, const char *); */
 
+/* add_by_szx: 下面两个函数的调用效果相同，这里的f1可以转换成函数指针。 */
 	test_func(f1);
 	test_func(&f1);
 

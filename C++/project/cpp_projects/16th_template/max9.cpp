@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string.h>
 #include <unistd.h>
+/* add_by_szx: 在 2 和 4 中选出更特化的函数 
+表示的范围更加少。
+*/
 
 using namespace std;
 

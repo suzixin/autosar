@@ -24,6 +24,7 @@ float& max(float& a, float& b)
 template<typename T>
 T& mymax(T& a, T& b)
 {
+/* add_by_szx: 使用这个函数可以打印当前的函数名称 */
 	cout<<__PRETTY_FUNCTION__<<endl;
 	return (a < b)? b : a;
 }
