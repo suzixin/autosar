@@ -5,6 +5,11 @@
 #include <stdlib.h>
 
 using namespace std;
+/* add_by_szx:  
+exception5.cpp的方式太麻烦
+直接把基类中的要实现的多态函数声明为虚函数
+这时只要捕获基类的引用就可以实现多态调用
+*/
 
 class MyException {
 public:

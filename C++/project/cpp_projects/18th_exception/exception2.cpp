@@ -36,6 +36,7 @@ void A(int i)
 	try {
 		B(i);
 	} catch (int j)
+/* add_by_szx: 	这个程序在抛出double类型的异常时会崩溃 */
 	{
 		cout<<"catch exception "<<j<<endl;
 	}

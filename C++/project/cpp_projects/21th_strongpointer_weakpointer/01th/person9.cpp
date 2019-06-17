@@ -7,7 +7,10 @@
 using namespace std;
 using namespace android::RSC;
 
-
+/* add_by_szx: 强指针：A指向B，A可以决定B的生死 
+弱指针：A指向B，A不能决定B的生死
+在这种场景下，需要引入弱指针来解决这个问题
+*/
 class Person : public LightRefBase<Person>{
 
 private:

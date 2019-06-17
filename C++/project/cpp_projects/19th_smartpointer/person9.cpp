@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string.h>
 #include <unistd.h>
-
+/* add_by_szx: 将智能指针定义成模板类，在使用的时候去实例化它，给他一个实际的类型 */
 using namespace std;
 
 class RefBase {

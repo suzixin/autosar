@@ -36,12 +36,15 @@ void A(int i)
 	try {
 		B(i);
 	} catch (int j)
+/* add_by_szx: 	通过多次捕捉来完善上一个程序 */
 	{
 		cout<<"catch int exception "<<j<<endl;
 	} catch (double d)
 	{
 		cout<<"catch double exception "<<d<<endl;
-	} catch (...){
+	} catch (...)
+/* add_by_szx: 		捕捉剩下的所有异常 */
+	{
 		cout<<"catch other exception "<<endl;
 	}
 }

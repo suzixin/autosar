@@ -3,6 +3,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
+/* add_by_szx: terminate 函数还可以用来捕捉未捕捉的但在意料之中的异常 */
 
 using namespace std;
 

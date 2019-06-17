@@ -37,6 +37,9 @@ public:
 		p = other;
 	}
 
+/* add_by_szx: 拷贝构造函数 主要用于赋值操作
+会因为格式问题出错
+*/
 	sp(sp &other)
 	{
 		cout<<"sp(const Person *other)"<<endl;
@@ -79,10 +82,12 @@ int main(int argc, char **argv)
 	 * 2. sp tmp(p);  ==> sp(Person *other)
 	 * 3.
 	 * 3.1 sp other(tmp);  ==> sp(sp &other2)
-	       问题在于: sp &other2 = tmp; // 错误语法
+	       问题在于: sp &other2 = tmp; 
+	       			 // 错误语法，因为一个引用没办法指向一个临时变量，一个临时的sp对象没办法转换成一个sp引用
 	                 const sp& other2 = tmp; //ok
 	 * 或
 	 * 3.2 sp other(tmp ==> Person*);  ==>sp(Person *other)
+	 * // 没办法把一个sp对象隐式转换为一个Person*指针
 	 */
 	
 	sp other = new Person();

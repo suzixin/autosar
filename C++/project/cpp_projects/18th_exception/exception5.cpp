@@ -5,7 +5,12 @@
 #include <stdlib.h>
 
 using namespace std;
-
+/* add_by_szx:  
+如果捕获的异常中存在继承关系的两个或多个类
+那么需要先捕获小范围的类，捕获子类
+再捕获基类
+否则子类的异常会被基类的catch分支所捕获
+*/
 class MyException {
 public:
 	void what(void) { cout<<"This is MyException"<<endl; }

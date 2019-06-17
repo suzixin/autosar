@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 using namespace std;
-
+/* add_by_szx: 扔出一个类的异常对象 */
 class MyException {
 public:
 	void what(void) { cout<<"This is MyException"<<endl; }

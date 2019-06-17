@@ -6,7 +6,11 @@
 
 using namespace std;
 using namespace android::RSC;
-
+/* add_by_szx: 
+之前的19th中的指针是非线程安全 的
+让引用计数的修改变成原子操作，不可被打断，这里保证了引用计数的修改是线程安全的
+但是并不代表这个指针的使用是线程安全的
+*/
 
 class Person : public LightRefBase<Person>{
 

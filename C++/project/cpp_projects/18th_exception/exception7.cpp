@@ -16,7 +16,10 @@ public:
 	void what(void) { cout<<"This is MySubException"<<endl; }
 };
 
-
+/* add_by_szx: 在函数c里面声明这个函数可能会抛出那些异常 
+其他函数调用C的时候就要根据这个声明来抛出异常
+如果C抛出一些意料之外的异常，程序就会完蛋，调用默认的处理意外之外异常的函数。
+*/
 void C(int i) throw(int, double)
 {
 	int a = 1;
@@ -63,12 +66,15 @@ void A(int i)
 		cout<<"catch other exception "<<endl;
 	}
 }
-
+/* add_by_szx: 我们自己的处理意料之外异常的函数，不过在这之后系统会调用它的终止函数
+我们也可以自己实现终止函数my_terminate_func
+*/
 void my_unexpected_func() 
 {
 	cout<<"my_unexpected_func"<<endl;
 }
 
+/* add_by_szx: 这就是我们提供的终止函数 */
 void my_terminate_func () { cout<<"my_terminate_func"<<endl; }  
 
 

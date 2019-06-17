@@ -69,7 +69,7 @@ public:
 	{
 		return p;
 	}
-
+/* add_by_szx: 重载了*操作，使这个智能指针拥有(*sp).XXX的功能 */
 	Person& operator*()
 	{
 		return *p;

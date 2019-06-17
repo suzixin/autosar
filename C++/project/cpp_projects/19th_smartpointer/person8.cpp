@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 using namespace std;
-
+/* add_by_szx: 将Person中一些管理引用计数相关的操作抽象成一个基类 */
 class RefBase {
 private:
 	int count;
