@@ -79,6 +79,9 @@ int main(int argc, char **argv)
 	m.printInfo();
 	p2.printInfo();
 
+	Point x = m + n;
+	x.printInfo();
+
 	return 0;
 }
 

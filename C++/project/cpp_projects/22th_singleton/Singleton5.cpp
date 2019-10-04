@@ -29,6 +29,7 @@ public:
 	void printInfo(){ cout<<"This is singleton"<<endl; }
 
 private:
+	/* æŠŠæž„é€ å‡½æ•°è®¾ç½®æˆç§æœ‰å‡½æ•°ï¼Œåªèƒ½é€šè¿‡getInstanceæ¥æž„é€  */
 	Singleton()
 	{
 		cout<<"Singleton()"<<endl;
@@ -74,7 +75,7 @@ int main()
 //	Singleton s5;
 
 
-	/* ´´½¨Ïß³Ì,ÔÚÏß³ÌÀïÒ²È¥µ÷ÓÃSingleton::getInstance */
+	/* ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½,ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½Ò²È¥ï¿½ï¿½ï¿½ï¿½Singleton::getInstance */
 	pthread_t thread1ID;
 	pthread_t thread2ID;
 

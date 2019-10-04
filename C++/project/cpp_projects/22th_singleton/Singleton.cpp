@@ -10,7 +10,7 @@ Singleton *gInstance;
 
 class Singleton {
 public:
-	static Singleton *getInstance()
+	Singleton *getInstance()
 	{
 		if (NULL == gInstance)
 			gInstance = new Singleton;

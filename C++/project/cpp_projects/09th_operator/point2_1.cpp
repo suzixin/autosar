@@ -44,17 +44,8 @@ Point operator+(Point &p1, Point &p2)
 	return n;
 }
 
-/* Point p(1,2); ++p; */
-Point operator++(Point &p, int a)
-{
-	cout<<"++p"<<endl;
-	p.x += 1;
-	p.y += 1;
-	return p;
-}
-
 /* Point p(1,2); p++; */
-Point operator++(Point &p)
+Point operator++(Point &p, int a)
 {
 	cout<<"p++"<<endl;
 	Point n;
@@ -62,6 +53,15 @@ Point operator++(Point &p)
 	p.x += 1;
 	p.y += 1;
 	return n;	
+}
+
+/* Point p(1,2); ++p; */
+Point operator++(Point &p)
+{
+	cout<<"++p"<<endl;
+	p.x += 1;
+	p.y += 1;
+	return p;
 }
 
 int main(int argc, char **argv)
